@@ -1,0 +1,305 @@
+/*************************
+   style Header section
+*************************/
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+header{
+  background-color: antiquewhite;
+  height: 1000px;
+  width: 100%;
+}
+body{
+  font-family: 'Tinos', serif;
+  background-color:rgb(252, 247, 240);
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+ 
+nav li{
+  list-style: none;
+  margin-left: 50px;
+}
+nav ul{
+  display: flex;
+}
+.title{
+  text-align: center;
+  align-items: center;
+ }
+ 
+ .heading{
+  font-weight: 900;
+  font-size: 40px;
+ }
+ .btn-1{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  border: 100px;
+  height: 64px;
+  border-radius: 5px;
+  background-color: #FD6E0A;
+  padding: 18px 36px;
+}
+.title img{
+  height: 600px;
+  width: 1200px;
+  margin: 20px 0;
+}
+/*************************
+   style container-1
+*************************/
+
+.album{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.album-title{
+  text-align: left;
+  padding-top: 230px ;
+  padding-left: 50px;
+}
+.container-1{
+  display: flex;
+  margin: 50px 0 0 350px;
+  }
+  .quick-list{
+color: rgb(19, 206, 206);
+  }
+  .of-our{
+font-style:normal;
+font-weight:bolder;
+  }
+
+  .features{
+color: #FD6E0A;
+  }
+
+/*************************
+   style container-2
+*************************/
+
+.container-2{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
+.features-heading{
+margin-top: 20px;
+padding-top: 20px;
+}
+.features{
+  color: black;
+}
+.features-title{
+  border-left:3px solid #FD6E0A;
+  padding-left: 10px;
+}
+.features-item{
+  margin-top: 40px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.btn-2{
+  color: white;
+  margin-top: -50px;
+  border: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #FD6E0A;
+  padding: 20px;
+  margin-left: -50px;
+}
+
+.year{
+  font-weight: 700;
+  font-size: 30px;
+}
+.expe{
+  font-size: 10px;
+}
+
+/*************************
+   style Some fact
+*************************/
+.some-fact{
+margin: 100px 0 100px 250px;
+}
+
+
+/*************************
+   style container-3
+*************************/
+.container-3{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 150px;
+}
+.logo{
+  border: 2px solid #FD6E0A;
+  height: 130px;
+  width: 150px;
+  text-align: center;
+  line-height: 0.5;
+  padding-top: 20px;
+  transition: width 5s, height 5s, transform 5s;
+}
+.logo:hover{
+  transform:rotate(360deg);
+}
+
+/*************************
+   style Examples
+*************************/
+.example-heading{
+  text-align: center;
+  margin: 100px 0;
+}
+.example-foto img{
+  height: 250px;
+  width: 300px;
+}
+
+.example-foto{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 200px;
+}
+
+
+/*************************
+   style Our Sponsors
+*************************/
+.our-sponsors{
+  text-align: center;
+  margin:100px 0 20px;
+}
+
+
+
+/*************************
+   style sponsors logo
+*************************/
+.sponsors-logo{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 100px;
+}
+.sponsors-logo img{
+  filter: grayscale(100%);
+}
+
+/*************************
+      style footer
+*************************/
+.footer{
+  text-align: center;
+  background-color: antiquewhite;
+  margin: 100px 150px 200px;
+  padding: 15px 0;
+  border-radius: 5px;
+}
+
+
+
+
+                        /************************************
+                                Responsive Style                   
+                         ************************************/  
+                         
+                         
+ @media screen  and (max-width: 577px){
+  nav{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    align-items: center;
+  }
+  nav ul{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+  }
+
+  .title img{
+    width: 100%;
+    height:450px;
+  }
+  
+  .album, .container-1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 70px 0 0 0;
+    align-items: center;
+    
+  }
+
+  .album img{
+    width: 100%;
+  }
+  .album-title{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   justify-content: center;
+   
+   margin: 0;
+   padding: 0;
+  }
+  
+.picture img{
+  width: 100%;
+  margin-top: 50px;
+}
+div .btn-2{
+  margin: 20px 100px;
+ 
+}
+.some-fact{
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+.container-3{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  margin: 0;
+gap: 20px;
+}
+
+.example-foto{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0;
+  gap: 20px;
+}
+.example-foto img{
+  width: 100%;
+}
+.logo{
+  margin: 0 100px;
+}
+
+  .sponsors-logo{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: space-around;
+    row-gap: 50px;
+  }
+
+
+  .footer{
+    margin: 0;
+  }
+ }
+
